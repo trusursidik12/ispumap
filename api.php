@@ -90,7 +90,7 @@ function get_locations($param){
     $q = "SELECT locations.*, transactions.id transaction_id, transactions.date, transactions.pm10, transactions.so2, transactions.co, transactions.o3, transactions.no2, transactions.critical, GREATEST(transactions.pm10, transactions.so2, transactions.co, transactions.o3, transactions.no2) largest
     FROM locations JOIN (SELECT location_id, MAX(date) maxdate FROM transactions GROUP BY location_id) maxtrans ON locations.id = maxtrans.location_id
     JOIN transactions ON locations.id = transactions.location_id AND transactions.date = maxtrans.maxdate ".$where." ORDER BY largest";
-
+    // print_r($q);
     $result = mysqli()->query($q);
 
     $d = [];

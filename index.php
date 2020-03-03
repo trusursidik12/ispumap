@@ -134,6 +134,10 @@ $bulan = [
         box-shadow: none;
         color: white;
     }
+    .fix{
+        margin-top: 70px;
+        padding-top: 70px;
+    }
 
     .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar {
         border: none;
@@ -471,17 +475,17 @@ $bulan = [
     </style>
 </head>
 <body>
-    <div class="close" id="sidebar-container">
+    <div class="close" id="sidebar-container" style="background-color: transparent;">
         <div id="sidebar-toggler"><button class="btn btn-primary" type="button" ><i class="fa fa-caret-right"></i><i class="fa fa-caret-left"></i></button></div>
-        <div class="content">
+        <div class="content" style="background-color: transparent;">
             <div class="row">
                 <div class="col">
                     <input type="text" class="form-control" aria-label="Cari kota atau lokasi anda" id="search-box" onclick="this.select();">
                 </div>
             </div>
-            <div class="row" id="sidebar">
+            <div class="row" id="sidebar" style="background-color: rgba(65, 204, 220, 0.66);">
                 <div class="col">
-                    <div class="row row-1">
+                    <div class="row row-1" style="background-color: rgba(65, 204, 220, 0.66);">
                         <div class="col">
                             <h4>Indeks Standar Pencemaran Udara (ISPU)</h4>
                             <h6></h6>
@@ -499,17 +503,17 @@ $bulan = [
                             <h7></h7>
                         </div>
                     </div>
-                    <div class="row row-3">
+                    <div class="row row-3" style="background-color: transparent;">
                         <div class="col">
                             <h6>Critical Component</h6>
                             <h7></h7>
                         </div>
                     </div>
-                    <div class="row row-4">
+                    <div class="row row-4" style="background-color: transparent;">
                     </div>
-                    <div class="row row-5">
+                    <div class="row row-5" style="background-color: transparent;">
                     </div>
-                    <div class="row row-6">
+                    <div class="row row-6" style="background-color: rgba(65, 204, 220, 0.66);">
                         <div class="col">
                             <h6>Tingkat Polusi Perbulan</h6>
                             <h7>Perkiraan tingkat polusi udara berdasarkan bulan</h7>
@@ -532,10 +536,10 @@ $bulan = [
         </div>
     </div>
 
-    <button type="button" id="top-button" class="button-show" aria-show="top-container" aria-hide="top-button">
+    <button type="button" id="top-button" class="button-show" aria-show="top-container" aria-hide="top-button"  style="background-color: rgba(8, 14, 69, 0.6);">
         <img src="assets/ic_peringkat.png">
     </button>
-    <div id="top-container">
+    <div id="top-container" style="background-color: rgba(8, 14, 69, 0.6);">
         <div class="top-header col">
             <div class="row">
                 <div class="col">
@@ -914,8 +918,8 @@ $bulan = [
             var city_name = [];
             var rank_selected;
             var greenIcon = L.icon({
-            iconUrl: 'image/green.png',
-            shadowUrl: 'leaf-shadow.png',
+            iconUrl: 'image/flag.png',
+            // shadowUrl: 'leaf-shadow.png',
 
             // iconSize:     [38, 95], // size of the icon
             // shadowSize:   [50, 64], // size of the shadow
@@ -930,34 +934,39 @@ $bulan = [
             // popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
             });
             $.each(resp, function(i, j){
-                // L.marker([j.lat, j.long], {icon: greenIcon}).addTo(map);
-                // rank_selected = get_rank(j.largest);
-                // var circle = L.circleMarker([j.lat, j.long], {
-                // var circle = L.marker([j.lat, j.long], {icon: greenIcon},{
-                //     color: rank_selected.color_dark,
-                // 	fillColor: rank_selected.color_dark,
-                // 	fillOpacity: 1,
-                // 	radius: 12,
-                // })
-                var circle = L.marker([j.lat, j.long],{
-                    icon: greenIcon,
-                    // color: rank_selected.color_dark,
-                    // fillColor: rank_selected.color_dark,
-                    // fillOpacity: 1,
-                    // radius: 12,
+                rank_selected = get_rank(j.largest);
+                var circle = L.circleMarker([j.lat, j.long], {
+                    color: rank_selected.color_dark,
+                    fillColor: rank_selected.color_dark,
+                    fillOpacity: 1,
+                    radius: 14,
                 })
-                // .bindTooltip(j.largest, {
-                //     permanent: true,
-                //     direction: 'center',
-                //     className: 'leaflet-tooltip'
-                // })
+                .bindTooltip(j.largest, {
+                    permanent: true,
+                    direction: 'center',
+                    className: 'leaflet-tooltip'
+                })
+                .addTo(map).on('click', show_detail_marker_override);
+
+                var circle2 = L.marker([j.lat, j.long],{
+                    icon: greenIcon,
+                })
+
+                .bindTooltip(j.largest, {
+                    permanent: true,
+                    sticky: true,
+                    direction: 'center',
+                    className: 'leaflet-tooltip'
+                })
                 .addTo(map).on('click', show_detail_marker_override);
 
                 city_name.push(j.name);
 
                 j.rank = rank_selected;
+                circle2.options = j;
                 circle.options = j;
 
+                markers.push(circle2);
                 markers.push(circle);
 
                 /*
