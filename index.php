@@ -150,7 +150,7 @@ $bulan = [
 
     #sidebar-container {
         position: fixed;
-        top: 90px;
+        top: 20px;
         bottom: 0;
         z-index: 1004;
         padding: 0 15px;
@@ -349,7 +349,7 @@ $bulan = [
     #badge-container {
         color: white;
         position: fixed;
-        top: 90px;
+        top: 20px;
         right: 0;
         z-index: 1003;
         text-transform: uppercase;
@@ -364,7 +364,7 @@ $bulan = [
 
     #top-button {
         position: fixed;
-        top: 150px;
+        top: 20px;
         right: 0;
         z-index: 1003;
         background-color: #0f197a;
@@ -373,7 +373,7 @@ $bulan = [
         font-size: 1rem;
         font-weight: 500;
         padding: .3rem .75rem;
-        margin-right: 15px;
+        margin-right: 10px;
         border: none;
         box-shadow: 0 0 3px rgba(0,0,0,0.5);
     }
@@ -393,7 +393,7 @@ $bulan = [
         position: fixed;
         margin-right: 15px;
         margin-left: 15px;
-        top: 120px;
+        top: 20px;
         right: 0;
         z-index: 1003;
         background-color: rgba(8, 14, 69, 0.6);
@@ -532,15 +532,8 @@ $bulan = [
         </div>
     </div>
 
-    <div id="badge-container">
-            <?php
-        foreach($rank as $r){
-            echo '<span class="badge" style="background-color: '.$r['color_dark'].';">'.$r['label_id'].'</span> ';
-        }
-        ?>
-    </div>
     <button type="button" id="top-button" class="button-show" aria-show="top-container" aria-hide="top-button">
-        Peringkat ISPU Kota <img src="assets/ic_peringkat.png">
+        <img src="assets/ic_peringkat.png">
     </button>
     <div id="top-container">
         <div class="top-header col">
@@ -559,7 +552,6 @@ $bulan = [
         <div class="col" style="height: 100%; overflow-y: auto;">
 
             <div id="top-rank-container">
-                <h2>Peringkat Kualitas Udara Berdasar Kota</h2>
                 <div class="top-rank-content" id="top-rank-terbersih">
                     <table class="content">
                     </table>
@@ -575,22 +567,22 @@ $bulan = [
 
     <div id="mapid"></div>
 
-    <div class="footer bg-primary fixed-bottom text-danger">
+    <div class="footer fixed-bottom">
         <div class="d-flex text-center">
             <div class="p-2 flex-fill bg-primary">
-                <button><i class="fas fa-globe"></i>Home</button>
+                <a href="# " class="text-white"><i class="fas fa-globe"></i></a>
             </div>
             <div class="p-2 flex-fill bg-success">
-                <button><i class="fas fa-heart"></i>Home</button>
+                <a href="#" class="text-white"><i class="fas fa-heart"></i></a>
             </div>
             <div class="p-2 flex-fill bg-danger">
-                <button><i class="fas fa-heart"></i>Home</button>
+                <a href="#" class="text-white"><i class="fas fa-user-circle"></i></a>
             </div>
             <div class="p-2 flex-fill bg-warning">
-                <button><i class="fas fa-heart"></i>Home</button>
+                <a href="#" class="text-white"><i class="fas fa-newspaper"></i></a>
             </div>
             <div class="p-2 flex-fill bg-info">
-                <button><i class="fas fa-heart"></i>Home</button>
+                <a href="#" class="text-white"><i class="fas fa-sitemap"></i></a>
             </div>
         </div>
     </div>
@@ -921,19 +913,44 @@ $bulan = [
             var length = resp.length;
             var city_name = [];
             var rank_selected;
+            var greenIcon = L.icon({
+            iconUrl: 'image/green.png',
+            shadowUrl: 'leaf-shadow.png',
+
+            // iconSize:     [38, 95], // size of the icon
+            // shadowSize:   [50, 64], // size of the shadow
+            // iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+            // shadowAnchor: [4, 62],  // the same for the shadow
+            // popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+
+            iconSize:     [24, 44], // size of the icon
+            // shadowSize:   [50, 64], // size of the shadow
+            iconAnchor:   [13, 40], // point of the icon which will correspond to marker's location
+            // shadowAnchor: [4, 62],  // the same for the shadow
+            // popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+            });
             $.each(resp, function(i, j){
-                rank_selected = get_rank(j.largest);
-                var circle = L.circleMarker([j.lat, j.long], {
-                    color: rank_selected.color_dark,
-                	fillColor: rank_selected.color_dark,
-                	fillOpacity: 1,
-                	radius: 12,
+                // L.marker([j.lat, j.long], {icon: greenIcon}).addTo(map);
+                // rank_selected = get_rank(j.largest);
+                // var circle = L.circleMarker([j.lat, j.long], {
+                // var circle = L.marker([j.lat, j.long], {icon: greenIcon},{
+                //     color: rank_selected.color_dark,
+                // 	fillColor: rank_selected.color_dark,
+                // 	fillOpacity: 1,
+                // 	radius: 12,
+                // })
+                var circle = L.marker([j.lat, j.long],{
+                    icon: greenIcon,
+                    // color: rank_selected.color_dark,
+                    // fillColor: rank_selected.color_dark,
+                    // fillOpacity: 1,
+                    // radius: 12,
                 })
-                .bindTooltip(j.largest, {
-                    permanent: true,
-                    direction: 'center',
-                    className: 'leaflet-tooltip'
-                })
+                // .bindTooltip(j.largest, {
+                //     permanent: true,
+                //     direction: 'center',
+                //     className: 'leaflet-tooltip'
+                // })
                 .addTo(map).on('click', show_detail_marker_override);
 
                 city_name.push(j.name);
