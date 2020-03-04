@@ -918,11 +918,19 @@ $bulan = [
             var length = resp.length;
             var city_name = [];
             var rank_selected;
-			var geojson = {
+			
+			var geojson_aceh = {
    "type":"FeatureCollection",
    "features":[
       {
          "type":"Feature",
+		 "properties": {
+			"stroke": "#555555",
+			"stroke-width": 2,
+			"stroke-opacity": 2,
+			"fill": "#555555",
+			"fill-opacity": 0.5
+		},
          "geometry":{
             "type":"MultiPolygon",
             "coordinates":[
@@ -2480,13 +2488,18 @@ $bulan = [
                ]
             ]
          },
-         "properties":{
-            "cartodb_id":16,
-            "country":"Indonesia",
-            "id_1":1,
-            "slug":"indonesia-aceh",
-            "state":"Aceh"
-         }
+          "properties": {
+			"stroke": "#555555",
+			"stroke-width": 2,
+			"stroke-opacity": 1,
+			"fill": "#555555",
+			"fill-opacity": 0.5,
+			"cartodb_id": 16,
+			"country": "Indonesia",
+			"id_1": 1,
+			"slug": "indonesia-aceh",
+			"state": "Aceh"
+		  }
       },
 	 ]
 };
@@ -2629,14 +2642,14 @@ $bulan = [
                 })
                 .addTo(map).on('click', show_detail_marker_override);
 				
-				L.geoJSON(geojson, {
+				L.geoJSON(geojson_aceh, {
 					style : function(feature){
 						console.log(j.largest);
 						return {
 							
 							color : get_rank(j.largest).color_dark,
-							fillColor : get_rank(0).color_dark,
-							opacity : 0.5,
+							fillColor : get_rank(j.largest).color_dark,
+							fillOpacity : 0.03,
 						}
 					}
 				}).addTo(map);
@@ -2647,8 +2660,8 @@ $bulan = [
 						return {
 							
 							color : get_rank(j.largest).color_dark,
-							fillColor : get_rank(0).color_dark,
-							opacity : 0.5,
+							fillColor : get_rank(j.largest).color_dark,
+							fillOpacity : 0.03,
 						}
 					}
 				}).addTo(map);
