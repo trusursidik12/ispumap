@@ -7,7 +7,7 @@ $result = call_user_func($_GET['f'], $_GET);
 die(json_encode($result));
 
 function mysqli (){
-    $mysqli = new mysqli("localhost", "root", "12345", "ispumap");
+    $mysqli = new mysqli("localhost", "root", "root", "ispumap");
     if ($mysqli->connect_errno) {
         die("Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error);
     }
