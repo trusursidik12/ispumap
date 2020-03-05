@@ -10,17 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
     <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+	<style>
+		html, body {
+		  height: 100%;
+		}
+
+		.full-height {
+		  height: 50%;
+		}
+	</style>
 </head>
 <body>
-	<style>
-	body {
-    padding: 0;
-    margin: 0;
-}
-html, body, #mapid {
-    height: 100%;
-}
-	</style>
 	<nav class="navbar-light bg-light sticky-top">
 		<form class="">
 			<div class="d-flex">
@@ -36,8 +36,7 @@ html, body, #mapid {
 			</div>
 		</form>
 	</nav>
-
-	<div style="padding-bottom: 40px">
+	<div style="margin-bottom: -200px;">
 
 		<div class="m-2">
 			<div class="d-flex" >
@@ -54,12 +53,51 @@ html, body, #mapid {
 					</div>
 				</div>
 			</div>
-			<div class="d-flex">
-				
+			<div class="p-2" style="margin-top: 50px;">
+				<div class="d-flex text-center">
+					<div class="col-sm">
+						<img src="assets/cloud.png">
+						<b>25°</b>
+					</div>
+					<div class="col-sm">
+						<img src="assets/humidity2.png">
+						<b>55%</b>
+					</div>
+					<div class="col-sm">
+						<img src="assets/wind.png">
+						<b style="font-size: 12px">250</b><b style="font-size: 9px;">km/h</b>
+					</div>
+					<div class="col-sm">
+						<img src="assets/mask2.png">
+						<b>33</b>
+					</div>
+					<div class="col-sm">
+						<img src="assets/pm25.png">
+						<b>9.1</b>
+					</div>
+				</div>
+				<div style="margin-top: 20px;">
+					<div class="d-flex">
+						<div class="col-sm-8">&nbsp;</div>
+						<div class="col-sm-2">
+							Status
+						</div>
+						<div class="col-sm-2 bg-success text-center">
+							BAIK
+						</div>
+					</div>
+				</div>
+				<div style="margin-top: 20px; padding-bottom: 200px;">
+					
+				</div>
 			</div>
-		</div>
 
+		</div>
 	</div>
+
+	<div class="card m-3 full-height naf" id="mapid">&nbsp;</div>
+
+	<div class="row" style="padding-top: 35px;"></div>
 
 	<div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
@@ -91,7 +129,7 @@ html, body, #mapid {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script src="typeahead.js"></script>
 	<script>
-		var map;
+		// var map;
 		initmap();
 		function initmap() {
 			// set up the map
@@ -114,4 +152,5 @@ html, body, #mapid {
 			}).addTo(map);
 		}
 	</script>
+
 </html>
