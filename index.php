@@ -574,19 +574,19 @@ $bulan = [
     <div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
             <div onclick="location.href='index.php';" class="flex-fill p-2 border">
-                <i class="fas fa-globe text-primary"></i>
+                <i class="fas fa-globe fa-lg text-primary"></i>
             </div>
             <div onclick="location.href='detailkota.php';" class="flex-fill p-2 border">
-                <i class="fas fa-heart text-dark"></i>
+                <i class="fas fa-heart fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='profile.php';" class="flex-fill p-2 border">
-                <i class="fas fa-user-circle text-dark"></i>
+                <i class="fas fa-user-circle fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='news.php';" class="flex-fill p-2 border">
-                <i class="fas fa-newspaper text-dark"></i>
+                <i class="fas fa-newspaper fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='decision.php';" class="flex-fill p-2 border">
-                <i class="fas fa-sitemap text-dark"></i>
+                <i class="fas fa-sitemap fa-lg text-dark"></i>
             </div>
         </div>
     </div>

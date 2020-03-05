@@ -26,8 +26,8 @@ html, body, #mapid {
 	<nav class="navbar-light bg-light sticky-top">
 		<form class="">
 			<div class="d-flex">
-				<div class="mr-auto p-1">
-					<img width="60" src="icon/logo.jpeg">
+				<div class="mr-auto p-1" style="margin-left: 20px;">
+					<img width="40" src="icon/icon.png">
 				</div>
 				<div class="p-1">
 					<input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -151,19 +151,19 @@ html, body, #mapid {
 	<div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
             <div onclick="location.href='index.php';" class="flex-fill p-2 border">
-                <i class="fas fa-globe text-dark"></i>
+                <i class="fas fa-globe fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='detailkota.php';" class="flex-fill p-2 border">
-                <i class="fas fa-heart text-dark"></i>
+                <i class="fas fa-heart fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='profile.php';" class="flex-fill p-2 border">
-                <i class="fas fa-user-circle text-dark"></i>
+                <i class="fas fa-user-circle fa-lg text-dark"></i>
             </div>
             <div onclick="location.href='news.php';" class="flex-fill p-2 border">
-                <i class="fas fa-newspaper text-primary"></i>
+                <i class="fas fa-newspaper fa-lg text-primary"></i>
             </div>
             <div onclick="location.href='decision.php';" class="flex-fill p-2 border">
-                <i class="fas fa-sitemap text-dark"></i>
+                <i class="fas fa-sitemap fa-lg text-dark"></i>
             </div>
         </div>
     </div>
