@@ -23,95 +23,146 @@ html, body, #mapid {
 }
 
 	</style>
-	<nav class="navbar navbar-light bg-light justify-content-between">
-	<?php if(!isMobile()){ ?>
-		<a class="navbar-brand">Navbar</a>
-	<?php } ?>
-		<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
-	</nav>
-	<nav class="navbar navbar-light bg-light text-center">
-		<form class="form-inline">
-			<button class="btn btn-outline" type="button">Main button</button>
-			<button class="btn btn-outline" type="button">Smaller button</button>
+	<nav class="navbar-light bg-light sticky-top">
+		<form class="">
+			<div class="d-flex">
+				<div class="mr-auto p-1">
+					<img width="60" src="icon/logo.jpeg">
+				</div>
+				<div class="p-1">
+					<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+				</div>
+				<div class="p-1">
+					<button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
 		</form>
 	</nav>
 
-	<div class="card-header">
-		<div class="card text-center" style="background-color:#f7f7f7;border:0;">
-			<div class="col">
-				<img width="100" src="image/profile.png">
-				<h2>My Location</h2>
-				<h5>kota apa..</h5>
+	<div style="padding-bottom: 50px">
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
+				</div>
 			</div>
 		</div>
-		<br>
-		<div class="card rounded-500">
-			<div class="card-header">
-				<div class="d-flex bd-highlight">
-					<div class="p-2 bd-highlight">My Location</div>
-					<div class="ml-auto p-2 bd-highlight">25°</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
 				</div>
 			</div>
-			<div class="d-flex text-center">
-				<div class="p-2 flex-fill">
-					<img width="30" src="assets/temparature.png">
-					<br>
-					25°
+		</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
 				</div>
-				<div class="p-2 flex-fill">
-					<img width="30" src="assets/humidity.png">
-					<br>
-					55%
-				</div>
-				<div class="p-2 flex-fill">
-					<img width="30" src="assets/wind_direction.png">
-					<br>
-					12 Km/h
-				</div>
-				<div class="p-2 flex-fill">
-					<img width="30" src="assets/mask.png">
-					<br>
-					26
-				</div>
-				<div class="p-2 flex-fill">
-					<img width="30" src="assets/humidity.png">
-					<br>
-					5,1
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
 				</div>
 			</div>
-			<div class="card-header">
-				<div class="d-flex bd-highlight">
-					<div class="p-2 bd-highlight">Status : Baik</div>
+		</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
 				</div>
 			</div>
-			<div class="card-body">
-				<div class="card text-center">
-					<!--iframe src="https://leafletjs.com/examples/mobile/example.html" width="300" height="200"></iframe-->
-					<div class="col-sm"><p id="mapid">a</p></div>
+		</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card m-2">
+			<div class="d-flex">
+				<div class="p-2 text-center">
+					<img src="image/kalimantan.jpg" width="100" height="100">
+				</div>
+				<div class="p-1">
+					<div class="col">
+						<b>Kebakaran Hutan Kalimantan</b><hr style="margin-top: 5px; margin-bottom: 5px">
+					</div>
+					<div class="col text-justify" style="font-size: 10px">
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s ..</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="footer fixed-bottom">
-        <div class="d-flex text-center">
-            <div class="p-2 flex-fill bg-primary">
-                <a href="# " class="text-white"><i class="fas fa-globe"></i></a>
+        <div class="d-flex text-center bg-light">
+            <div class="p-2 flex-fill p-3 border">
+                <a href="# " class="text-dark"><i class="fas fa-globe"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-success">
-                <a href="#" class="text-white"><i class="fas fa-heart"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-heart"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-danger">
-                <a href="#" class="text-white"><i class="fas fa-user-circle"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-user-circle"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-warning">
-                <a href="#" class="text-white"><i class="fas fa-newspaper"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-primary"><i class="fas fa-newspaper"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-info">
-                <a href="#" class="text-white"><i class="fas fa-sitemap"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-sitemap"></i></a>
             </div>
         </div>
     </div>
