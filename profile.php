@@ -95,7 +95,7 @@
 		</div>
 	</div>
 
-	<div class="card m-3 full-height naf" id="mapid">&nbsp;</div>
+	<div class="card m-2 full-height naf" id="mapid">&nbsp;</div>
 
 	<div style="padding-top: 30px;"></div>
 
