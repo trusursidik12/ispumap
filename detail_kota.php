@@ -63,7 +63,7 @@
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div id="today" class="container tab-pane active"><br>
-				<div class="card rounded-500">
+				<div class="card rounded-500" data-toggle="modal" data-target="#today-1">
 					<div class="card-header" style="background-color:#C23616;">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">DKI Jakarta</div>
@@ -104,7 +104,7 @@
 					</div>
 				</div>
 				<br>
-				<div class="card rounded-500">
+				<div class="card rounded-500" data-toggle="modal" data-target="#today-2">
 					<div class="card-header" style="background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">Bekasi</div>
@@ -146,7 +146,7 @@
 				</div>
 			</div>
 			<div id="prediction" class="container tab-pane fade"><br>
-				<div class="card rounded-500">
+				<div class="card rounded-500" data-toggle="modal" data-target="#prediction-1">
 					<div class="card-header" style="background-color:#C23616;">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">DKI Jakarta</div>
@@ -187,7 +187,7 @@
 					</div>
 				</div>
 				<br>
-				<div class="card rounded-500">
+				<div class="card rounded-500" data-toggle="modal" data-target="#prediction-2">
 					<div class="card-header" style="background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">Bekasi</div>
@@ -226,9 +226,277 @@
 							<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
 						</div>
 					</div>
+					<div class="d-flex text-center" style="background-color:#4CD137;">
+						<div class="p-2 flex-fill">
+							<img width="30" src="assets/temparature.png">
+							<br>
+							25°
+						</div>
+						<div class="p-2 flex-fill">
+							<img width="30" src="assets/humidity.png">
+							<br>
+							55%
+						</div>
+						<div class="p-2 flex-fill">
+							<img width="30" src="assets/wind_direction.png">
+							<br>
+							12 Km/h
+						</div>
+						<div class="p-2 flex-fill">
+							<img width="30" src="assets/mask.png">
+							<br>
+							26
+						</div>
+						<div class="p-2 flex-fill">
+							<img width="30" src="assets/humidity.png">
+							<br>
+							5,1
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
+		<!-- The Modal -->
+		<div class="modal fade" id="today-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5 class="modal-title">DKI Jakarta</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="card rounded-500">
+							<div class="card-header" style="background-color:#C23616;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">DKI Jakarta</div>
+									<div class="ml-auto p-2 bd-highlight">30°</div>
+								</div>
+							</div>
+							<div class="d-flex text-center" style="background-color:#E84118;">
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/temparature.png">
+									<br>
+									25°
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									55%
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/wind_direction.png">
+									<br>
+									12 Km/h
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/mask.png">
+									<br>
+									26
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									5,1
+								</div>
+							</div>
+							<div class="card-header" style="font-size:10px;background-color:#C23616;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--the Modal -->
+		<!-- The Modal -->
+		<div class="modal fade" id="today-2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5 class="modal-title">Bekasi</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="card rounded-500">
+							<div class="card-header" style="background-color:#44BD32;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Bekasi</div>
+									<div class="ml-auto p-2 bd-highlight">27°</div>
+								</div>
+							</div>
+							<div class="d-flex text-center" style="background-color:#4CD137;">
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/temparature.png">
+									<br>
+									25°
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									55%
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/wind_direction.png">
+									<br>
+									12 Km/h
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/mask.png">
+									<br>
+									26
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									5,1
+								</div>
+							</div>
+							<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--the Modal -->
+		<!-- The Modal -->
+		<div class="modal fade" id="prediction-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5 class="modal-title">DKI Jakarta</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="card rounded-500">
+							<div class="card-header" style="background-color:#C23616;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">DKI Jakarta</div>
+									<div class="ml-auto p-2 bd-highlight">30°</div>
+								</div>
+							</div>
+							<div class="d-flex text-center" style="background-color:#E84118;">
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/temparature.png">
+									<br>
+									25°
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									55%
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/wind_direction.png">
+									<br>
+									12 Km/h
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/mask.png">
+									<br>
+									26
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									5,1
+								</div>
+							</div>
+							<div class="card-header" style="font-size:10px;background-color:#C23616;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--the Modal -->
+		<!-- The Modal -->
+		<div class="modal fade" id="prediction-2">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<!-- Modal Header -->
+					<div class="modal-header">
+						<h5 class="modal-title">Bekasi</h5>
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+					</div>
+					<!-- Modal body -->
+					<div class="modal-body">
+						<div class="card rounded-500">
+							<div class="card-header" style="background-color:#44BD32;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Bekasi</div>
+									<div class="ml-auto p-2 bd-highlight">27°</div>
+								</div>
+							</div>
+							<div class="d-flex text-center" style="background-color:#4CD137;">
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/temparature.png">
+									<br>
+									25°
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									55%
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/wind_direction.png">
+									<br>
+									12 Km/h
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/mask.png">
+									<br>
+									26
+								</div>
+								<div class="p-2 flex-fill">
+									<img width="30" src="assets/humidity.png">
+									<br>
+									5,1
+								</div>
+							</div>
+							<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+								<div class="d-flex bd-highlight">
+									<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Modal footer -->
+					<div class="modal-footer">
+						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--the Modal -->
 	</div>
 	<div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
