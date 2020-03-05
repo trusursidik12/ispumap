@@ -1,7 +1,8 @@
+<?php include_once "common.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Profile</title>
+	<title>News</title>
 
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -20,18 +21,22 @@
 html, body, #mapid {
     height: 100%;
 }
+
 	</style>
-	<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top">
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-	    <a class="navbar-brand" href="#">
-	    	<img width="60" src="icon/logo.jpeg">
-	    </a>
-	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-	    </ul>
-	  </div>
+	<nav class="navbar navbar-light bg-light justify-content-between">
+	<?php if(!isMobile()){ ?>
+		<a class="navbar-brand">Navbar</a>
+	<?php } ?>
+		<form class="form-inline">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+		</form>
+	</nav>
+	<nav class="navbar navbar-light bg-light text-center">
+		<form class="form-inline">
+			<button class="btn btn-outline" type="button">Main button</button>
+			<button class="btn btn-outline" type="button">Smaller button</button>
+		</form>
 	</nav>
 
 	<div class="card-header">
