@@ -26,13 +26,19 @@
 	}
 
 	</style>
-	<nav class="navbar navbar-light bg-light justify-content-between">
-	<?php if(!isMobile()){ ?>
-		<a class="navbar-brand">Navbar</a>
-	<?php } ?>
-		<form class="form-inline">
-			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+	<nav class="navbar-light bg-light sticky-top">
+		<form class="">
+			<div class="d-flex">
+				<div class="mr-auto p-1">
+					<img width="60" src="icon/logo.jpeg">
+				</div>
+				<div class="p-1">
+					<input class="form-control" type="search" placeholder="Search" aria-label="Search">
+				</div>
+				<div class="p-1">
+					<button class="btn btn-light" type="submit"><i class="fas fa-search"></i></button>
+				</div>
+			</div>
 		</form>
 	</nav>
 	<div class="container mt-3" style="padding-bottom:100px;">
@@ -58,13 +64,13 @@
 		<div class="tab-content">
 			<div id="today" class="container tab-pane active"><br>
 				<div class="card rounded-500">
-					<div class="card-header">
+					<div class="card-header" style="background-color:#C23616;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">My Location</div>
-							<div class="ml-auto p-2 bd-highlight">25°</div>
+							<div class="p-2 bd-highlight">DKI Jakarta</div>
+							<div class="ml-auto p-2 bd-highlight">30°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center">
+					<div class="d-flex text-center" style="background-color:#E84118;">
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/temparature.png">
 							<br>
@@ -91,21 +97,21 @@
 							5,1
 						</div>
 					</div>
-					<div class="card-header">
+					<div class="card-header" style="font-size:10px;background-color:#C23616;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Baik</div>
+							<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="card rounded-500">
-					<div class="card-header">
+					<div class="card-header" style="background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">My Location</div>
-							<div class="ml-auto p-2 bd-highlight">25°</div>
+							<div class="p-2 bd-highlight">Bekasi</div>
+							<div class="ml-auto p-2 bd-highlight">27°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center">
+					<div class="d-flex text-center" style="background-color:#4CD137;">
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/temparature.png">
 							<br>
@@ -132,22 +138,22 @@
 							5,1
 						</div>
 					</div>
-					<div class="card-header">
+					<div class="card-header" style="font-size:10px; background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Baik</div>
+							<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="prediction" class="container tab-pane fade"><br>
 				<div class="card rounded-500">
-					<div class="card-header">
+					<div class="card-header" style="background-color:#C23616;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">My Location</div>
-							<div class="ml-auto p-2 bd-highlight">25°</div>
+							<div class="p-2 bd-highlight">DKI Jakarta</div>
+							<div class="ml-auto p-2 bd-highlight">30°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center">
+					<div class="d-flex text-center" style="background-color:#E84118;">
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/temparature.png">
 							<br>
@@ -174,21 +180,21 @@
 							5,1
 						</div>
 					</div>
-					<div class="card-header">
+					<div class="card-header" style="font-size:10px;background-color:#C23616;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Baik</div>
+							<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="card rounded-500">
-					<div class="card-header">
+					<div class="card-header" style="background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">My Location</div>
-							<div class="ml-auto p-2 bd-highlight">25°</div>
+							<div class="p-2 bd-highlight">Bekasi</div>
+							<div class="ml-auto p-2 bd-highlight">27°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center">
+					<div class="d-flex text-center" style="background-color:#4CD137;">
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/temparature.png">
 							<br>
@@ -215,9 +221,9 @@
 							5,1
 						</div>
 					</div>
-					<div class="card-header">
+					<div class="card-header" style="font-size:10px; background-color:#44BD32;">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Baik</div>
+							<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
 						</div>
 					</div>
 				</div>
@@ -225,21 +231,21 @@
 		</div>
 	</div>
 	<div class="footer fixed-bottom">
-        <div class="d-flex text-center">
-            <div class="p-2 flex-fill bg-primary">
-                <a href="# " class="text-white"><i class="fas fa-globe"></i></a>
+        <div class="d-flex text-center bg-light">
+            <div class="p-2 flex-fill p-3 border">
+                <a href="# " class="text-dark"><i class="fas fa-globe"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-success">
-                <a href="#" class="text-white"><i class="fas fa-heart"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-heart"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-danger">
-                <a href="#" class="text-white"><i class="fas fa-user-circle"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-user-circle"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-warning">
-                <a href="#" class="text-white"><i class="fas fa-newspaper"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-primary"><i class="fas fa-newspaper"></i></a>
             </div>
-            <div class="p-2 flex-fill bg-info">
-                <a href="#" class="text-white"><i class="fas fa-sitemap"></i></a>
+            <div class="p-2 flex-fill p-3 border">
+                <a href="#" class="text-dark"><i class="fas fa-sitemap"></i></a>
             </div>
         </div>
     </div>
