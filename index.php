@@ -572,21 +572,21 @@ $bulan = [
     <div id="mapid"></div>
 
     <div class="footer fixed-bottom">
-        <div class="d-flex text-center">
-            <div class="p-2 flex-fill bg-primary">
-                <a href="# " class="text-white"><i class="fas fa-globe"></i></a>
+        <div class="d-flex text-center bg-light">
+            <div onclick="location.href='index.php';" class="flex-fill p-2 border">
+                <i class="fas fa-globe text-primary"></i>
             </div>
-            <div class="p-2 flex-fill bg-success">
-                <a href="#" class="text-white"><i class="fas fa-heart"></i></a>
+            <div onclick="location.href='detailkota.php';" class="flex-fill p-2 border">
+                <i class="fas fa-heart text-dark"></i>
             </div>
-            <div class="p-2 flex-fill bg-danger">
-                <a href="#" class="text-white"><i class="fas fa-user-circle"></i></a>
+            <div onclick="location.href='profile.php';" class="flex-fill p-2 border">
+                <i class="fas fa-user-circle text-dark"></i>
             </div>
-            <div class="p-2 flex-fill bg-warning">
-                <a href="#" class="text-white"><i class="fas fa-newspaper"></i></a>
+            <div onclick="location.href='news.php';" class="flex-fill p-2 border">
+                <i class="fas fa-newspaper text-dark"></i>
             </div>
-            <div class="p-2 flex-fill bg-info">
-                <a href="#" class="text-white"><i class="fas fa-sitemap"></i></a>
+            <div onclick="location.href='decision.php';" class="flex-fill p-2 border">
+                <i class="fas fa-sitemap text-dark"></i>
             </div>
         </div>
     </div>
