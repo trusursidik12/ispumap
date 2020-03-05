@@ -26,8 +26,8 @@ html, body, #mapid {
 	<nav class="navbar-light bg-light sticky-top">
 		<form class="">
 			<div class="d-flex">
-				<div class="mr-auto p-1">
-					<img width="60" src="icon/logo.jpeg">
+				<div class="mr-auto p-1" style="margin-left: 20px;">
+					<img width="40" src="icon/icon.png">
 				</div>
 				<div class="p-1">
 					<input class="form-control" type="search" placeholder="Search" aria-label="Search">
@@ -39,7 +39,7 @@ html, body, #mapid {
 		</form>
 	</nav>
 
-	<div style="padding-bottom: 50px">
+	<div style="padding-bottom: 40px">
 		<div class="card m-2">
 			<div class="d-flex">
 				<div class="p-2 text-center">
@@ -145,59 +145,28 @@ html, body, #mapid {
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 	<div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
-            <div class="p-2 flex-fill p-3 border">
-                <a href="# " class="text-dark"><i class="fas fa-globe"></i></a>
+            <div onclick="location.href='index.php';" class="flex-fill p-2 border">
+                <i class="fas fa-globe fa-lg text-dark"></i>
             </div>
-            <div class="p-2 flex-fill p-3 border">
-                <a href="#" class="text-dark"><i class="fas fa-heart"></i></a>
+            <div onclick="location.href='detailkota.php';" class="flex-fill p-2 border">
+                <i class="fas fa-heart fa-lg text-dark"></i>
             </div>
-            <div class="p-2 flex-fill p-3 border">
-                <a href="#" class="text-dark"><i class="fas fa-user-circle"></i></a>
+            <div onclick="location.href='profile.php';" class="flex-fill p-2 border">
+                <i class="fas fa-user-circle fa-lg text-dark"></i>
             </div>
-            <div class="p-2 flex-fill p-3 border">
-                <a href="#" class="text-primary"><i class="fas fa-newspaper"></i></a>
+            <div onclick="location.href='news.php';" class="flex-fill p-2 border">
+                <i class="fas fa-newspaper fa-lg text-primary"></i>
             </div>
-            <div class="p-2 flex-fill p-3 border">
-                <a href="#" class="text-dark"><i class="fas fa-sitemap"></i></a>
+            <div onclick="location.href='decision.php';" class="flex-fill p-2 border">
+                <i class="fas fa-sitemap fa-lg text-dark"></i>
             </div>
         </div>
     </div>
+
 </body>
-
-				<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-				<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-				<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
-				<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-				<script src="typeahead.js"></script>
-				<script>
-					var map;
-					initmap();
-					function initmap() {
-						// set up the map
-						map = new L.Map('mapid', {
-						attributionControl: false,
-						zoomControl: false,
-						});
-						
-						var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-						//topomap
-						//var osmUrl='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
-						var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
-						var osm = new L.TileLayer(osmUrl, {minZoom: 3, attribution: osmAttrib});
-
-						// start the map in South-East England
-						map.setView(new L.LatLng(-0.7, 119),5);
-						map.addLayer(osm);
-						L.control.zoom({
-						// position: 'bottomleft'
-						}).addTo(map);
-					}
-				</script>
 </html>
