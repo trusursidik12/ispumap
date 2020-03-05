@@ -97,7 +97,7 @@
 
 	<div class="card m-3 full-height naf" id="mapid">&nbsp;</div>
 
-	<div class="row" style="padding-top: 35px;"></div>
+	<div style="padding-top: 30px;"></div>
 
 	<div class="footer fixed-bottom">
         <div class="d-flex text-center bg-light">
