@@ -40,9 +40,6 @@
 				</div>
 			</div>
 		</form>
-	</nav>
-	<div class="container mt-3" style="padding-bottom:100px;">
-		<!-- Nav tabs -->
 		<ul class="nav nav-tabs justify-content-center">
 		  <li class="nav-item">
 			<a class="nav-link active" href="#today">Data Hari ini</a>
@@ -51,211 +48,185 @@
 			<a class="nav-link" href="#prediction">Prediksi Besok Hari</a>
 		  </li>
 		</ul>
-		<!--div class="d-flex text-center">
-			<div class="p-2 flex-fill">
-				<button type="button" class="btn btn-light active">Active Primary</button>
-			</div>
-			<div class="p-2 flex-fill">
-				<button type="button" class="btn btn-light">Active Primary</button>
-			</div>
-		</div>-->
+	</nav>
+	<div class="container mt-3" style="padding-bottom:100px;">
 
 		<!-- Tab panes -->
 		<div class="tab-content">
 			<div id="today" class="container tab-pane active"><br>
 				<div class="card rounded-500" data-toggle="modal" data-target="#today-1">
-					<div class="card-header" style="background-color:#C23616;">
+					<div class="card-header bg-primary">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">DKI Jakarta</div>
 							<div class="ml-auto p-2 bd-highlight">30°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center" style="background-color:#E84118;">
+					<div class="d-flex text-center bg-primary" style="opacity: 0.8">
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/temparature.png">
+							<img width="30" src="assets/cloud.png">
 							<br>
-							25°
+							<b>32°</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/humidity.png">
 							<br>
-							55%
+							<b>52%</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/wind_direction.png">
 							<br>
-							12 Km/h
+							<b style="font-size: 12px">145</b><b style="font-size: 9px;">km/h</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/mask.png">
 							<br>
-							26
+							<b>51</b>
 						</div>
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
+							<img width="30" src="assets/pm25.png">
 							<br>
-							5,1
+							<b>9,1</b>
 						</div>
 					</div>
-					<div class="card-header" style="font-size:10px;background-color:#C23616;">
+					<div class="card-header bg-primary">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+							<div class="bd-highlight">
+								<h6 style="font-size: 11px;">Status : SEDANG | Rekomendasi : Gunakan Masker</h6>
+							</div>
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="card rounded-500" data-toggle="modal" data-target="#today-2">
-					<div class="card-header" style="background-color:#44BD32;">
+					<div class="card-header bg-success">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">Bekasi</div>
 							<div class="ml-auto p-2 bd-highlight">27°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center" style="background-color:#4CD137;">
+					<div class="d-flex text-center bg-success" style="opacity: 0.8">
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/temparature.png">
+							<img width="30" src="assets/cloud.png">
 							<br>
-							25°
+							<b>25°</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/humidity.png">
 							<br>
-							55%
+							<b>55%</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/wind_direction.png">
 							<br>
-							12 Km/h
+							<b style="font-size: 12px">14.5</b><b style="font-size: 9px;">km/h</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/mask.png">
 							<br>
-							26
+							<b>26</b>
 						</div>
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
+							<img width="30" src="assets/pm25.png">
 							<br>
-							5,1
+							<b>5,1</b>
 						</div>
 					</div>
-					<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+					<div class="card-header bg-success">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
+							<div class="bd-highlight">
+								<h6 style="font-size: 11px;">Status : BAIK</h6>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="prediction" class="container tab-pane fade"><br>
 				<div class="card rounded-500" data-toggle="modal" data-target="#prediction-1">
-					<div class="card-header" style="background-color:#C23616;">
+					<div class="card-header bg-success">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">DKI Jakarta</div>
 							<div class="ml-auto p-2 bd-highlight">30°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center" style="background-color:#E84118;">
+					<div class="d-flex text-center bg-success" style="opacity: 0.8">
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/temparature.png">
+							<img width="30" src="assets/cloud.png">
 							<br>
-							25°
+							<b>30°</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/humidity.png">
 							<br>
-							55%
+							<b>56%</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/wind_direction.png">
 							<br>
-							12 Km/h
+							<b style="font-size: 12px">250</b><b style="font-size: 9px;">km/h</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/mask.png">
 							<br>
-							26
+							<b>35</b>
 						</div>
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
+							<img width="30" src="assets/pm25.png">
 							<br>
-							5,1
+							<b>5,4</b>
 						</div>
 					</div>
-					<div class="card-header" style="font-size:10px;background-color:#C23616;">
+					<div class="card-header bg-success">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+							<div class="bd-highlight">
+								<h6 style="font-size: 11px;">Status : BAIK</h6>
+							</div>
 						</div>
 					</div>
 				</div>
 				<br>
 				<div class="card rounded-500" data-toggle="modal" data-target="#prediction-2">
-					<div class="card-header" style="background-color:#44BD32;">
+					<div class="card-header bg-primary">
 						<div class="d-flex bd-highlight">
 							<div class="p-2 bd-highlight">Bekasi</div>
 							<div class="ml-auto p-2 bd-highlight">27°</div>
 						</div>
 					</div>
-					<div class="d-flex text-center" style="background-color:#4CD137;">
+					<div class="d-flex text-center bg-primary" style="opacity: 0.8">
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/temparature.png">
+							<img width="30" src="assets/cloud.png">
 							<br>
-							25°
+							<b>37°</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/humidity.png">
 							<br>
-							55%
+							<b>55%</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/wind_direction.png">
 							<br>
-							12 Km/h
+							<b style="font-size: 12px">14.5</b><b style="font-size: 9px;">km/h</b>
 						</div>
 						<div class="p-2 flex-fill">
 							<img width="30" src="assets/mask.png">
 							<br>
-							26
+							<b>83</b>
 						</div>
 						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
+							<img width="30" src="assets/pm25.png">
 							<br>
-							5,1
+							<b>9,5</b>
 						</div>
 					</div>
-					<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+					<div class="card-header bg-primary">
 						<div class="d-flex bd-highlight">
-							<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
-						</div>
-					</div>
-					<div class="d-flex text-center" style="background-color:#4CD137;">
-						<div class="p-2 flex-fill">
-							<img width="30" src="assets/temparature.png">
-							<br>
-							25°
-						</div>
-						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
-							<br>
-							55%
-						</div>
-						<div class="p-2 flex-fill">
-							<img width="30" src="assets/wind_direction.png">
-							<br>
-							12 Km/h
-						</div>
-						<div class="p-2 flex-fill">
-							<img width="30" src="assets/mask.png">
-							<br>
-							26
-						</div>
-						<div class="p-2 flex-fill">
-							<img width="30" src="assets/humidity.png">
-							<br>
-							5,1
+							<div class="bd-highlight">
+								<h6 style="font-size: 11px;">Status : SEDANG | Rekomendasi : Gunakan Masker</h6>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
 		
 		<!-- The Modal -->
 		<div class="modal fade" id="today-1">
@@ -267,51 +238,49 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<!-- Modal body -->
-					<div class="modal-body">
-						<div class="card rounded-500">
-							<div class="card-header" style="background-color:#C23616;">
+					<div class="modal-body" style="margin-bottom: 400px;">
+						<div class="card rounded-500" data-toggle="modal" data-target="#today-1">
+							<div class="card-header bg-primary">
 								<div class="d-flex bd-highlight">
 									<div class="p-2 bd-highlight">DKI Jakarta</div>
 									<div class="ml-auto p-2 bd-highlight">30°</div>
 								</div>
 							</div>
-							<div class="d-flex text-center" style="background-color:#E84118;">
+							<div class="d-flex text-center bg-primary" style="opacity: 0.8">
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/temparature.png">
+									<img width="30" src="assets/cloud.png">
 									<br>
-									25°
+									<b>32°</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/humidity.png">
 									<br>
-									55%
+									<b>52%</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/wind_direction.png">
 									<br>
-									12 Km/h
+									<b style="font-size: 12px">145</b><b style="font-size: 9px;">km/h</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/mask.png">
 									<br>
-									26
+									<b>51</b>
 								</div>
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/humidity.png">
+									<img width="30" src="assets/pm25.png">
 									<br>
-									5,1
+									<b>9,1</b>
 								</div>
 							</div>
-							<div class="card-header" style="font-size:10px;background-color:#C23616;">
+							<div class="card-header bg-primary">
 								<div class="d-flex bd-highlight">
-									<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+									<div class="bd-highlight">
+										<h6 style="font-size: 11px;">Status : SEDANG | Rekomendasi : Gunakan Masker</h6>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Modal footer -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
@@ -327,51 +296,49 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<!-- Modal body -->
-					<div class="modal-body">
-						<div class="card rounded-500">
-							<div class="card-header" style="background-color:#44BD32;">
+					<div class="modal-body" style="margin-bottom: 400px;">
+						<div class="card rounded-500" data-toggle="modal" data-target="#today-2">
+							<div class="card-header bg-success">
 								<div class="d-flex bd-highlight">
 									<div class="p-2 bd-highlight">Bekasi</div>
 									<div class="ml-auto p-2 bd-highlight">27°</div>
 								</div>
 							</div>
-							<div class="d-flex text-center" style="background-color:#4CD137;">
+							<div class="d-flex text-center bg-success" style="opacity: 0.8">
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/temparature.png">
+									<img width="30" src="assets/cloud.png">
 									<br>
-									25°
+									<b>25°</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/humidity.png">
 									<br>
-									55%
+									<b>55%</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/wind_direction.png">
 									<br>
-									12 Km/h
+									<b style="font-size: 12px">14.5</b><b style="font-size: 9px;">km/h</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/mask.png">
 									<br>
-									26
+									<b>26</b>
 								</div>
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/humidity.png">
+									<img width="30" src="assets/pm25.png">
 									<br>
-									5,1
+									<b>5,1</b>
 								</div>
 							</div>
-							<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+							<div class="card-header bg-success">
 								<div class="d-flex bd-highlight">
-									<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
+									<div class="bd-highlight">
+										<h6 style="font-size: 11px;">Status : BAIK</h6>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Modal footer -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
@@ -387,51 +354,49 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<!-- Modal body -->
-					<div class="modal-body">
+					<div class="modal-body" style="margin-bottom: 400px;">
 						<div class="card rounded-500">
-							<div class="card-header" style="background-color:#C23616;">
+							<div class="card-header bg-success">
 								<div class="d-flex bd-highlight">
 									<div class="p-2 bd-highlight">DKI Jakarta</div>
 									<div class="ml-auto p-2 bd-highlight">30°</div>
 								</div>
 							</div>
-							<div class="d-flex text-center" style="background-color:#E84118;">
+							<div class="d-flex text-center bg-success" style="opacity: 0.8">
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/temparature.png">
+									<img width="30" src="assets/cloud.png">
 									<br>
-									25°
+									<b>30°</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/humidity.png">
 									<br>
-									55%
+									<b>56%</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/wind_direction.png">
 									<br>
-									12 Km/h
+									<b style="font-size: 12px">250</b><b style="font-size: 9px;">km/h</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/mask.png">
 									<br>
-									26
+									<b>35</b>
 								</div>
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/humidity.png">
+									<img width="30" src="assets/pm25.png">
 									<br>
-									5,1
+									<b>5,4</b>
 								</div>
 							</div>
-							<div class="card-header" style="font-size:10px;background-color:#C23616;">
+							<div class="card-header bg-success">
 								<div class="d-flex bd-highlight">
-									<div class="p-2 bd-highlight">Status : BAHAYA | Rekomendasi : Tidak Layak Tinggal</div>
+									<div class="bd-highlight">
+										<h6 style="font-size: 11px;">Status : BAIK</h6>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Modal footer -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
@@ -447,51 +412,49 @@
 						<button type="button" class="close" data-dismiss="modal">&times;</button>
 					</div>
 					<!-- Modal body -->
-					<div class="modal-body">
+					<div class="modal-body" style="margin-bottom: 400px;">
 						<div class="card rounded-500">
-							<div class="card-header" style="background-color:#44BD32;">
+							<div class="card-header bg-primary">
 								<div class="d-flex bd-highlight">
 									<div class="p-2 bd-highlight">Bekasi</div>
 									<div class="ml-auto p-2 bd-highlight">27°</div>
 								</div>
 							</div>
-							<div class="d-flex text-center" style="background-color:#4CD137;">
+							<div class="d-flex text-center bg-primary" style="opacity: 0.8">
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/temparature.png">
+									<img width="30" src="assets/cloud.png">
 									<br>
-									25°
+									<b>37°</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/humidity.png">
 									<br>
-									55%
+									<b>55%</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/wind_direction.png">
 									<br>
-									12 Km/h
+									<b style="font-size: 12px">14.5</b><b style="font-size: 9px;">km/h</b>
 								</div>
 								<div class="p-2 flex-fill">
 									<img width="30" src="assets/mask.png">
 									<br>
-									26
+									<b>83</b>
 								</div>
 								<div class="p-2 flex-fill">
-									<img width="30" src="assets/humidity.png">
+									<img width="30" src="assets/pm25.png">
 									<br>
-									5,1
+									<b>9,5</b>
 								</div>
 							</div>
-							<div class="card-header" style="font-size:10px; background-color:#44BD32;">
+							<div class="card-header bg-primary">
 								<div class="d-flex bd-highlight">
-									<div class="p-2 bd-highlight">Status : Kurang Baik | Rekomendasi : Gunakan Masker</div>
+									<div class="bd-highlight">
+										<h6 style="font-size: 11px;">Status : SEDANG | Rekomendasi : Gunakan Masker</h6>
+									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!-- Modal footer -->
-					<div class="modal-footer">
-						<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
 					</div>
 				</div>
 			</div>
