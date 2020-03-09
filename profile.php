@@ -278,7 +278,7 @@ $bulan = [
 
     function get_detail(location_id){
         var request = $.ajax({
-            url: "http://103.247.11.149/server_side/api/ispumap.php",
+            url: "https://103.247.11.149/server_side/api/ispumap.php",
             data: {f: "get_detail", location_id: location_id},
             datatype: 'json'
         });
@@ -487,7 +487,7 @@ $bulan = [
         var largest_label;
         var length;
         var request = $.ajax({
-            url: "http://103.247.11.149/server_side/api/ispumap.php",
+            url: "https://103.247.11.149/server_side/api/ispumap.php",
             data: {f: "get_top_city"},
             datatype: 'json'
         });
@@ -513,7 +513,7 @@ $bulan = [
 
     function get_locations() {
         var request = $.ajax({
-            url: "http://103.247.11.149/server_side/api/ispumap.php",
+            url: "https://103.247.11.149/server_side/api/ispumap.php",
             data: {f: "get_locations"},
             datatype: 'json'
         });
@@ -713,10 +713,10 @@ $bulan = [
 			zoomControl: false,
 			});
 			
-			var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+			var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 			//topomap
 			//var osmUrl='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
-			var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+			var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
 			var osm = new L.TileLayer(osmUrl, {minZoom: 3, attribution: osmAttrib});
 
 			// start the map in South-East England
