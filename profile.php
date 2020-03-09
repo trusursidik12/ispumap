@@ -713,10 +713,10 @@ $bulan = [
 			zoomControl: false,
 			});
 			
-			var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+			var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 			//topomap
 			//var osmUrl='https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png';
-			var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+			var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
 			var osm = new L.TileLayer(osmUrl, {minZoom: 3, attribution: osmAttrib});
 
 			// start the map in South-East England
