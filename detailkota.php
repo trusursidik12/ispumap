@@ -397,6 +397,68 @@
 								</div>
 							</div>
 						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+							<div class="p-2 flex-fill">
+								<b>04:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>09:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>14:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>19:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>23:00</b>
+							</div>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/cloud.png">
+								<br>
+								<b>30°</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/humidity.png">
+								<br>
+								<b>56%</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/wind_direction.png">
+								<br>
+								<b style="font-size: 12px">250</b><b style="font-size: 9px;">km/h</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/mask.png">
+								<br>
+								<b>35</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/pm25.png">
+								<br>
+								<b>5,4</b>
+							</div>
+						<?php } ?>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -454,6 +516,68 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+							<div class="p-2 flex-fill">
+								<b>04:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>09:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>14:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>19:00</b>
+							</div>
+							<div class="p-2 flex-fill">
+								<b>23:00</b>
+							</div>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/cloud.png">
+								<br>
+								<b>30°</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/humidity.png">
+								<br>
+								<b>56%</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/wind_direction.png">
+								<br>
+								<b style="font-size: 12px">250</b><b style="font-size: 9px;">km/h</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/mask.png">
+								<br>
+								<b>35</b>
+							</div>
+						<?php } ?>
+						</div>
+						<div class="d-flex text-center" style="opacity: 0.8;border:0;">
+						<?php for($i=1;$i<=5;$i++){ ?>
+							<div class="p-2 flex-fill">
+								<img width="30" src="assets/pm25.png">
+								<br>
+								<b>5,4</b>
+							</div>
+						<?php } ?>
 						</div>
 					</div>
 				</div>
