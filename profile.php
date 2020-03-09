@@ -732,7 +732,7 @@ $bulan = [
 			var radius = e.accuracy;
 
 			L.marker(e.latlng).addTo(map)
-				.bindPopup("You are within " + radius + " meters from this point").openPopup();
+				.bindPopup("Lokasi anda BAIK").openPopup();
 
 			L.circle(e.latlng, radius).addTo(map);
 		}
